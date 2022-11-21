@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Follow.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ParticlePath.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 68.2582, 13.4929, -68.2582, -13.4929, 11, 114, -70.6393, 111.912, 70.6393, -111.912, -118, -127, -50.7968, -19.0488, 50.7968, 19.0488, 93, -199, 0, 0, 0, 0, 186, -137, -3.1748, -25.3984, 3.1748, 25.3984, 215, -53, 11.9055, -11.1118, -11.9055, 11.1118, 167, 51, 0, 0, 0, 0, 81, 117, 0, 0, 0, 0, 11, 114 )
+}
+
+[node name="ParticlePath" type="Node2D"]
+position = Vector2( 0, -2 )
+scale = Vector2( 0.4, 0.4 )
+script = ExtResource( 2 )
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( -29, 26 )
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 10.9979, 114 )
+rotation = -2.92199
+offset = 0.00427246
+
+[node name="Follow" parent="Path2D/PathFollow2D" instance=ExtResource( 1 )]
+scale = Vector2( 1, 1 )

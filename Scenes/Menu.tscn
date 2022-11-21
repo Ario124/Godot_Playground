@@ -54,6 +54,34 @@ margin_bottom = 120.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
+[node name="FirstBox2" type="MarginContainer" parent="HBoxContainer"]
+margin_left = 244.0
+margin_right = 484.0
+margin_bottom = 240.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/FirstBox2"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 220.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 200, 200 )
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/FirstBox2"]
+margin_left = 120.0
+margin_top = 120.0
+margin_right = 120.0
+margin_bottom = 120.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 margin_right = 264.0
 margin_bottom = 294.0
@@ -85,17 +113,17 @@ __meta__ = {
 
 [node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer2"]
 margin_left = 216.0
-margin_right = 419.0
+margin_right = 469.0
 margin_bottom = 297.0
 custom_constants/margin_right = 40
 custom_constants/margin_top = 240
-custom_constants/margin_left = 40
+custom_constants/margin_left = 90
 custom_constants/margin_bottom = 40
 
 [node name="Label" type="Label" parent="HBoxContainer2/MarginContainer2"]
-margin_left = 40.0
+margin_left = 90.0
 margin_top = 240.0
-margin_right = 163.0
+margin_right = 213.0
 margin_bottom = 257.0
 custom_fonts/font = ExtResource( 1 )
 text = "Follow Particles"
@@ -132,16 +160,16 @@ custom_fonts/font = ExtResource( 1 )
 text = "Start"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="."]
-margin_left = 224.0
+margin_left = 280.0
 margin_top = 264.0
-margin_right = 408.0
+margin_right = 464.0
 margin_bottom = 287.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button" type="Button" parent="HBoxContainer4"]
+[node name="Follow" type="Button" parent="HBoxContainer4"]
 margin_left = 41.0
 margin_right = 90.0
 margin_bottom = 23.0
@@ -156,5 +184,5 @@ custom_fonts/font = ExtResource( 1 )
 text = "Stop"
 
 [connection signal="pressed" from="HBoxContainer3/MarginContainer/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="HBoxContainer4/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="HBoxContainer4/Follow" to="." method="_on_Follow_pressed"]
 [connection signal="pressed" from="HBoxContainer4/Button2" to="." method="_on_Button_pressed"]
