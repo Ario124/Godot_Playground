@@ -28,7 +28,7 @@ hue_variation = 0.22
 hue_variation_random = 0.53
 
 [node name="SquareParticles" type="Particles2D"]
-position = Vector2( 492, 305 )
+position = Vector2( -1, 1 )
 amount = 100
 process_material = SubResource( 1 )
 texture = ExtResource( 1 )
