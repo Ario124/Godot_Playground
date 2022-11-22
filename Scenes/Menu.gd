@@ -21,3 +21,5 @@ func _on_Follow_pressed():
 	follow_particles_container.add_child(particles)
 	yield(get_tree().create_timer(10.0), "timeout")
 	follow_particles_container.remove_child(particles)
+
+

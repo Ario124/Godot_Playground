@@ -170,19 +170,11 @@ __meta__ = {
 }
 
 [node name="Follow" type="Button" parent="HBoxContainer4"]
-margin_left = 41.0
-margin_right = 90.0
+margin_left = 67.0
+margin_right = 116.0
 margin_bottom = 23.0
 custom_fonts/font = ExtResource( 1 )
 text = "Start"
 
-[node name="Button2" type="Button" parent="HBoxContainer4"]
-margin_left = 94.0
-margin_right = 142.0
-margin_bottom = 23.0
-custom_fonts/font = ExtResource( 1 )
-text = "Stop"
-
 [connection signal="pressed" from="HBoxContainer3/MarginContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="HBoxContainer4/Follow" to="." method="_on_Follow_pressed"]
-[connection signal="pressed" from="HBoxContainer4/Button2" to="." method="_on_Button_pressed"]

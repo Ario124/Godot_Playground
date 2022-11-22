@@ -33,15 +33,15 @@ void fragment() {
 }"
 
 [sub_resource type="Gradient" id=6]
-offsets = PoolRealArray( 0, 0.136646, 0.385093, 0.614907, 1 )
-colors = PoolColorArray( 1, 1, 1, 0, 0.57, 1.16, 7.51, 0.83, 0.0352941, 0.628431, 0.72549, 0.788235, 1, 1, 1, 1, 0.165298, 0.645781, 0.919922, 0.321569 )
+offsets = PoolRealArray( 0, 0.136646, 0.273292, 0.428571, 0.689441, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 0.954102, 0.500381, 0.0708122, 0.352941, 0.976471, 0.0862745, 0.0470588, 0.85098, 0.887207, 0.0485191, 0.0485191, 1, 0, 0, 0, 0.721569, 0.937255, 0.26816, 0.0666666, 0.8 )
 
 [sub_resource type="GradientTexture" id=7]
 gradient = SubResource( 6 )
 
 [sub_resource type="Gradient" id=8]
-offsets = PoolRealArray( 0.00621118, 0.0993789, 0.391304, 0.63354, 1 )
-colors = PoolColorArray( 1, 1, 1, 0.415686, 0, 0.0519531, 13.3, 1, 0.242455, 0.433202, 0.626953, 1, 0.464707, 0.0235825, 0.548828, 1, 0.918345, 0.851055, 0.931177, 1 )
+offsets = PoolRealArray( 0.00621118, 0.0993789, 0.21118, 0.403727, 0.52795, 0.838509, 1 )
+colors = PoolColorArray( 1, 1, 1, 0.415686, 0.948242, 1, 0, 1, 0.934082, 0.532569, 0.182438, 1, 0.984863, 0.353379, 0.0153885, 1, 1, 0, 0, 1, 0.059082, 0.0570049, 0.0570049, 1, 1, 0.226845, 0.152344, 1 )
 
 [sub_resource type="GradientTexture" id=9]
 gradient = SubResource( 8 )
@@ -50,7 +50,7 @@ gradient = SubResource( 8 )
 shader = SubResource( 1 )
 shader_param/scroll1 = Vector2( 0.01, -0.03 )
 shader_param/scroll2 = Vector2( 0.01, -0.04 )
-shader_param/tex2_scale = 0.5
+shader_param/tex2_scale = 1.0
 shader_param/sharpness = 25.0
 shader_param/lifetimeColorGradient = SubResource( 7 )
 shader_param/overlapGradient = SubResource( 9 )
@@ -66,27 +66,28 @@ gradient = SubResource( 3 )
 [sub_resource type="ParticlesMaterial" id=5]
 flag_disable_z = true
 direction = Vector3( 0, -1, 0 )
-spread = 180.0
-gravity = Vector3( 0, 0, 0 )
+spread = 1.0
+gravity = Vector3( 0, -100, 0 )
 initial_velocity = 25.0
 initial_velocity_random = 0.43
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-damping = 100.0
-damping_random = 0.34
+linear_accel = 100.0
+linear_accel_random = 0.49
+angle_random = 0.79
 scale = 0.15
 scale_random = 0.18
 color_ramp = SubResource( 4 )
 hue_variation = 1.0
 hue_variation_random = 1.0
 
-[node name="Follow" type="Particles2D"]
+[node name="MagicLine" type="Particles2D"]
 modulate = Color( 2.32, 5.19, 9.83, 1 )
-self_modulate = Color( 2.32, 0.58, 3.47, 1 )
 material = SubResource( 2 )
+position = Vector2( 72, 88 )
 amount = 200
-lifetime = 0.5
-randomness = 0.56
+lifetime = 2.0
+randomness = 0.52
 local_coords = false
 process_material = SubResource( 5 )
 texture = ExtResource( 1 )
