@@ -2,7 +2,7 @@
 **Godot**
 
 ## About
-> Playground with cool particles effect and objects
+> Playground with cool particles effect and objects!
 
 
 
