@@ -4,7 +4,7 @@
 [ext_resource path="res://Scenes/SquareParticles.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Portal.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Main.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/Portal_G.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/NewestPortal.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Environment" id=1]
 background_mode = 4
@@ -35,5 +35,5 @@ visible = false
 position = Vector2( 547, 211 )
 scale = Vector2( 0.5, 0.25 )
 
-[node name="Portal2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 872, 526 )
+[node name="NewestPortal" parent="." instance=ExtResource( 7 )]
+position = Vector2( 819, 253 )

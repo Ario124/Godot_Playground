@@ -3,25 +3,28 @@
 [ext_resource path="res://Assets/Test/spotlight_5_64.png" type="Texture" id=1]
 
 [sub_resource type="Gradient" id=2]
-offsets = PoolRealArray( 0.0186335, 0.124224, 0.248447, 0.52795, 0.714286, 0.826087, 1 )
-colors = PoolColorArray( 1.1, 0.8, 1.1, 1, 1.06, 0.22, 0.64, 1, 0.20792, 0.482476, 0.967773, 1, 0, 1.11, 1.11, 1, 0, 1.11, 1.11, 1, 0.176471, 0.141176, 0.141176, 0.835294, 1, 1, 1, 0 )
+offsets = PoolRealArray( 0, 0.559006, 1 )
+colors = PoolColorArray( 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture" id=3]
 gradient = SubResource( 2 )
 
 [sub_resource type="ParticlesMaterial" id=1]
+lifetime_randomness = 1.0
 emission_shape = 5
-emission_ring_radius = 50.0
+emission_ring_radius = 40.0
 emission_ring_inner_radius = 40.0
 emission_ring_height = 0.0
 emission_ring_axis = Vector3( 0, 0, 1 )
-flag_align_y = true
-flag_rotate_y = true
+flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
 spread = 0.0
-gravity = Vector3( 0, -800, 0 )
-damping = 1.0
-scale = 0.2
-color = Color( 1.5, 1.5, 1.5, 1 )
+gravity = Vector3( 0, -1, 0 )
+initial_velocity = 125.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 39.22
+scale = 0.12
 color_ramp = SubResource( 3 )
 
 [node name="Portal2" type="Particles2D"]
