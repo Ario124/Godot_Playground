@@ -11,12 +11,13 @@ background_mode = 4
 glow_enabled = true
 glow_levels/1 = true
 glow_levels/2 = true
-glow_levels/3 = false
 glow_levels/5 = false
-glow_strength = 0.45
+glow_strength = 0.54
 glow_blend_mode = 0
 glow_bicubic_upscale = true
 glow_high_quality = true
+adjustment_enabled = true
+adjustment_contrast = 1.2
 
 [node name="Main" type="Node"]
 script = ExtResource( 4 )
@@ -36,4 +37,5 @@ position = Vector2( 547, 211 )
 scale = Vector2( 0.5, 0.25 )
 
 [node name="NewestPortal" parent="." instance=ExtResource( 7 )]
+visible = false
 position = Vector2( 819, 253 )

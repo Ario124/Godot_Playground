@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/spotlight_8.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Portal2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/PortalStars.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Portal_S.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Test/spotlight_5_64.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/GMP.tscn" type="PackedScene" id=5]

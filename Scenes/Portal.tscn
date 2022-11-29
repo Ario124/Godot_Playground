@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/spotlight_8.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Portal2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/PortalStars.tscn" type="PackedScene" id=2]
 
 [sub_resource type="ParticlesMaterial" id=1]
 emission_shape = 5

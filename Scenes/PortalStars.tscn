@@ -19,19 +19,19 @@ emission_ring_axis = Vector3( 0, 0, 1 )
 flag_disable_z = true
 direction = Vector3( 0, -1, 0 )
 spread = 0.0
-gravity = Vector3( 0, -1, 0 )
-initial_velocity = 125.0
+gravity = Vector3( 0, -180, 0 )
+initial_velocity = 40.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-linear_accel = 39.22
+linear_accel = 25.0
 scale = 0.12
 color_ramp = SubResource( 3 )
 
-[node name="Portal2" type="Particles2D"]
+[node name="PortalStars" type="Particles2D"]
 scale = Vector2( 1, 0.5 )
-amount = 100
-lifetime = 2.0
-speed_scale = 0.3
+amount = 400
+lifetime = 2.1
+speed_scale = 0.2
 randomness = 1.0
 process_material = SubResource( 1 )
 texture = ExtResource( 1 )

@@ -5,7 +5,7 @@ onready var follow_particles_container = $HBoxContainer/FirstBox2/CenterContaine
 onready var portal_particles_container = $HBoxContainer/FirstBox3/CenterContainer
 var square_particles = load("res://Scenes/SquareParticles.tscn")
 var follow_particles = load("res://Scenes/ParticlePath.tscn")
-var portal_particles = load("res://Scenes/Portal.tscn")
+var portal_particles = load("res://Scenes/NewestPortal.tscn")
 
 func _on_Button_pressed():
 	var particles = square_particles.instance()
